@@ -4,16 +4,46 @@
 		<title>Maxim Koshel | Senior DevOps Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Maxim Koshel" />
 		<meta
 			name="description"
-			content="Maxim Koshel is a Senior DevOps Engineer specializing in Kubernetes, CI/CD, service mesh, infrastructure automation, observability, and production reliability."
+			content="Senior DevOps Engineer portfolio for Maxim Koshel, covering Kubernetes, CI/CD, service mesh, infrastructure automation, observability, secrets, certificates, and production reliability."
 		/>
+		<meta
+			name="keywords"
+			content="Maxim Koshel, Senior DevOps Engineer, SRE, Platform Engineer, Kubernetes, CI/CD, Azure DevOps, Istio, Terraform, Vault, Dynatrace"
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#101418" />
+		<link rel="canonical" href="https://maximkoshel.github.io/MyWebsite/" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Maxim Koshel | Senior DevOps Engineer" />
+		<meta
+			property="og:description"
+			content="Senior DevOps Engineer portfolio focused on reliable delivery platforms, Kubernetes operations, CI/CD, service mesh, and production controls."
+		/>
+		<meta property="og:url" content="https://maximkoshel.github.io/MyWebsite/" />
+		<meta property="og:image" content="https://maximkoshel.github.io/MyWebsite/images/me.jpg" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Maxim Koshel | Senior DevOps Engineer" />
+		<meta
+			name="twitter:description"
+			content="Portfolio focused on DevOps, SRE, platform engineering, and production reliability."
+		/>
+		<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2311181d'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='700' fill='%23e7f3ec'%3EMK%3C/text%3E%3C/svg%3E" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+
 		<header class="site-header">
 			<nav class="site-nav" aria-label="Primary navigation">
-				<a class="brand" href="#home">Maxim Koshel</a>
+				<a class="brand" href="#home" aria-label="Maxim Koshel home">
+					<span class="brand-mark" aria-hidden="true">MK</span>
+					<span>Maxim Koshel</span>
+				</a>
 				<div class="nav-links">
 					<a href="#expertise">Expertise</a>
 					<a href="#experience">Experience</a>
@@ -25,28 +55,53 @@
 			</nav>
 		</header>
 
-		<main>
+		<main id="main">
 			<section id="home" class="hero">
-				<div class="hero-visual" aria-hidden="true">
-					<img src="images/me.jpg" alt="" />
-				</div>
 				<div class="hero-content">
-					<p class="eyebrow">Senior DevOps Engineer</p>
-					<h1>I turn complex production platforms into systems teams can trust.</h1>
+					<p class="role-label">Senior DevOps Engineer</p>
+					<h1>Reliable production platforms and release systems.</h1>
 					<p class="hero-text">
-						Since May 2020 across production operations and fintech infrastructure: NOC response,
-						Kubernetes, CI/CD, service mesh, secrets, certificates, monitoring, and the release
-						discipline that keeps high-change environments under control.
+						I work across Kubernetes, CI/CD, service mesh, secrets, certificates, monitoring,
+						automation, and release operations to make high-change environments easier to run,
+						release, and trust.
 					</p>
-					<div class="hero-actions">
-						<a class="button primary" href="#contact">Start a conversation</a>
-						<a class="button secondary" href="#impact">Review impact</a>
+					<div class="hero-actions" aria-label="Primary actions">
+						<a class="button primary" href="#contact">Contact Maxim</a>
+						<a class="button secondary" href="#case-studies">View public work</a>
 					</div>
 				</div>
-				<aside class="hero-card" aria-label="Career snapshot">
-					<p>Platform command</p>
-					<strong>400+ shipped work items across payment infrastructure, automation, and production reliability.</strong>
-					<div class="hero-tags">
+
+				<aside class="hero-panel" aria-label="Public delivery snapshot">
+					<div class="panel-topline">
+						<span>Public delivery snapshot</span>
+						<span class="status-dot">Available</span>
+					</div>
+					<div class="panel-profile">
+						<img src="images/me.jpg" alt="" aria-hidden="true" />
+						<div>
+							<strong>Production operations to DevOps</strong>
+							<span>Promoted in 2022</span>
+						</div>
+					</div>
+					<p class="panel-statement">
+						Production operations background, promoted into DevOps in 2022, now focused on
+						platform reliability, delivery flow, and operational controls.
+					</p>
+					<div class="proof-grid" aria-label="Selected public proof points">
+						<div>
+							<strong>400+</strong>
+							<span>Work items shipped</span>
+						</div>
+						<div>
+							<strong>100+</strong>
+							<span>Pipelines migrated</span>
+						</div>
+						<div>
+							<strong>21+</strong>
+							<span>Production releases</span>
+						</div>
+					</div>
+					<div class="stack-strip" aria-label="Core technologies">
 						<span>Kubernetes</span>
 						<span>Azure DevOps</span>
 						<span>Istio</span>
@@ -54,18 +109,13 @@
 						<span>Vault</span>
 						<span>Dynatrace</span>
 					</div>
-					<div class="signal-board" aria-label="Operational highlights">
-						<div><span>Release flow</span><strong>21+</strong></div>
-						<div><span>Pipeline migration</span><strong>100+</strong></div>
-						<div><span>Cluster estate</span><strong>8+</strong></div>
-					</div>
 				</aside>
 			</section>
 
 			<section id="expertise" class="section section-dark">
 				<div class="section-heading">
-					<p class="eyebrow">Expertise</p>
-					<h2>Senior platform work across delivery, runtime, security, and reliability.</h2>
+					<p class="section-kicker">Expertise</p>
+					<h2>Platform work across delivery, runtime, security controls, and reliability.</h2>
 				</div>
 				<div class="expertise-grid">
 					<article>
@@ -87,9 +137,15 @@
 			</section>
 
 			<section id="experience" class="section">
-				<div class="section-heading compact">
-					<p class="eyebrow">Experience</p>
-					<h2>Role history with the 2022 DevOps promotion called out clearly.</h2>
+				<div class="section-heading split">
+					<div>
+						<p class="section-kicker">Experience</p>
+						<h2>From production response to platform ownership.</h2>
+					</div>
+					<p>
+						A practical path from real-time NOC operations into DevOps engineering, with hands-on
+						work across production reliability, delivery automation, and infrastructure operations.
+					</p>
 				</div>
 				<div class="experience-list">
 					<article>
@@ -105,7 +161,7 @@
 					</article>
 					<article>
 						<div class="experience-meta">
-							<span class="case-period">May 2020 - May 2022 · 2 yrs 1 mo</span>
+							<span class="case-period">May 2020 - May 2022 - 2 yrs 1 mo</span>
 							<h3>NOC Specialist</h3>
 						</div>
 						<ul>
@@ -117,12 +173,14 @@
 				</div>
 			</section>
 
-			<section id="impact" class="section">
-				<div class="section-heading compact">
-					<p class="eyebrow">Measured impact</p>
-					<h2>Public summary of delivery scale.</h2>
+			<section id="impact" class="section impact-section">
+				<div class="section-heading split">
+					<div>
+						<p class="section-kicker">Measured impact</p>
+						<h2>Public-safe delivery scale.</h2>
+					</div>
 					<p>
-						This is a curated summary from internal Azure DevOps history. Raw ticket IDs, internal service names,
+						A curated public summary from delivery history. Raw ticket IDs, internal service names,
 						incident details, and environment-level implementation data are intentionally not published.
 					</p>
 				</div>
@@ -156,82 +214,88 @@
 
 			<section id="case-studies" class="section case-section">
 				<div class="section-heading">
-					<p class="eyebrow">Case studies</p>
-					<h2>Representative work, framed for public review.</h2>
+					<p class="section-kicker">Case studies</p>
+					<h2>Representative work, written for public review.</h2>
 				</div>
 				<div class="case-list">
 					<article>
-						<div>
+						<div class="case-head">
 							<span class="case-period">2025 - 2026</span>
 							<h3>Service mesh adoption</h3>
 						</div>
 						<p>Introduced Istio patterns across environments, covering sidecar strategy, traffic controls, mTLS, and egress policy readiness.</p>
-						<ul>
-							<li>Istio</li>
-							<li>Envoy</li>
-							<li>mTLS</li>
-							<li>Helm</li>
-						</ul>
+						<div class="case-tools">
+							<span>Istio</span>
+							<span>Envoy</span>
+							<span>mTLS</span>
+							<span>Helm</span>
+						</div>
 					</article>
 					<article>
-						<div>
+						<div class="case-head">
 							<span class="case-period">2022 - 2026</span>
 							<h3>CI/CD modernization</h3>
 						</div>
 						<p>Moved large build and release surfaces toward YAML, stronger scanning, standardized templates, and repeatable promotion flows.</p>
-						<ul>
-							<li>Azure DevOps</li>
-							<li>YAML</li>
-							<li>SonarQube</li>
-							<li>Snyk</li>
-						</ul>
+						<div class="case-tools">
+							<span>Azure DevOps</span>
+							<span>YAML</span>
+							<span>SonarQube</span>
+							<span>Snyk</span>
+						</div>
 					</article>
 					<article>
-						<div>
+						<div class="case-head">
 							<span class="case-period">2022 - 2026</span>
 							<h3>Kubernetes operations</h3>
 						</div>
 						<p>Supported cluster reliability through autoscaling, persistent storage, config governance, migration support, and runtime troubleshooting.</p>
-						<ul>
-							<li>Kubernetes</li>
-							<li>KEDA</li>
-							<li>Redis</li>
-							<li>NFS</li>
-						</ul>
+						<div class="case-tools">
+							<span>Kubernetes</span>
+							<span>KEDA</span>
+							<span>Redis</span>
+							<span>NFS</span>
+						</div>
 					</article>
 					<article>
-						<div>
+						<div class="case-head">
 							<span class="case-period">2021 - 2026</span>
 							<h3>Secrets and certificates</h3>
 						</div>
 						<p>Improved lifecycle handling for secrets and certificates through discovery, renewal, cleanup, secure injection, and monitoring workflows.</p>
-						<ul>
-							<li>Vault</li>
-							<li>Akeyless</li>
-							<li>CyberArk</li>
-							<li>PKI</li>
-						</ul>
+						<div class="case-tools">
+							<span>Vault</span>
+							<span>Akeyless</span>
+							<span>CyberArk</span>
+							<span>PKI</span>
+						</div>
 					</article>
 					<article>
-						<div>
+						<div class="case-head">
 							<span class="case-period">2020 - 2026</span>
 							<h3>Enterprise automation</h3>
 						</div>
 						<p>Built scheduling and automation systems for operational jobs, reconciliation, reporting, platform checks, and repeatable production tasks.</p>
-						<ul>
-							<li>JAMS</li>
-							<li>PowerShell</li>
-							<li>Python</li>
-							<li>Ansible</li>
-						</ul>
+						<div class="case-tools">
+							<span>JAMS</span>
+							<span>PowerShell</span>
+							<span>Python</span>
+							<span>Ansible</span>
+						</div>
 					</article>
 				</div>
 			</section>
 
 			<section id="timeline" class="section timeline-section">
-				<div class="section-heading compact">
-					<p class="eyebrow">Timeline</p>
-					<h2>Progression from automation foundations to platform ownership.</h2>
+				<div class="section-heading split">
+					<div>
+						<p class="section-kicker">Timeline</p>
+						<h2>Progression from operations foundations to platform work.</h2>
+					</div>
+					<p>
+						A concise public timeline of the work themes that shaped the move from production
+						monitoring into DevOps delivery and platform reliability.
+					</p>
 				</div>
 				<div class="timeline">
 					<article><span>2020</span><p>NOC operations, real-time event response, production monitoring, and cross-team incident coordination.</p></article>
@@ -246,13 +310,17 @@
 
 			<section id="contact" class="contact-section">
 				<div>
-					<p class="eyebrow">Contact</p>
-					<h2>Available for senior DevOps, SRE, platform engineering, and infrastructure roles.</h2>
+					<p class="section-kicker">Contact</p>
+					<h2>Open to senior DevOps, SRE, platform engineering, and infrastructure roles.</h2>
+					<p>
+						For roles where release discipline, Kubernetes operations, automation, and production
+						reliability matter.
+					</p>
 				</div>
-				<div class="contact-actions">
-					<a href="mailto:maximkoshel95@gmail.com">maximkoshel95@gmail.com</a>
-					<a href="tel:+972544319624">0544319624</a>
-					<a href="https://www.linkedin.com/in/maxim-koshel-00a981197" target="_blank" rel="noopener">LinkedIn</a>
+				<div class="contact-actions" aria-label="Contact options">
+					<a class="contact-link primary" href="mailto:maximkoshel95@gmail.com" aria-label="Email Maxim Koshel">Email Maxim</a>
+					<a class="contact-link" href="https://www.linkedin.com/in/maxim-koshel-00a981197" target="_blank" rel="noopener noreferrer" aria-label="Open Maxim Koshel on LinkedIn">LinkedIn</a>
+					<a class="contact-link" href="tel:+972544319624" aria-label="Call Maxim Koshel">Call</a>
 				</div>
 			</section>
 		</main>
