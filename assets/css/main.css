@@ -519,7 +519,7 @@ h3 {
 
 .expertise-grid {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 1rem;
 }
 
@@ -599,6 +599,46 @@ h3 {
 	box-shadow: var(--shadow-soft);
 }
 
+.skills-section {
+	position: relative;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.skills-grid article {
+	position: relative;
+	display: grid;
+	align-content: start;
+	gap: 0.75rem;
+	min-height: 180px;
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(251, 252, 248, 0.78)),
+		var(--panel);
+	padding: 1.15rem;
+	box-shadow: var(--shadow-soft);
+	overflow: hidden;
+}
+
+.skills-grid article::before {
+	content: "";
+	position: absolute;
+	inset: 0 auto 0 0;
+	width: 4px;
+	background: linear-gradient(180deg, var(--accent), var(--accent-2));
+}
+
+.skills-grid p {
+	color: var(--muted);
+	font-size: 0.96rem;
+	line-height: 1.55;
+}
+
 .case-section {
 	width: 100%;
 	max-width: none;
@@ -619,9 +659,9 @@ h3 {
 .case-list article {
 	position: relative;
 	display: grid;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto auto 1fr auto;
 	gap: 1rem;
-	min-height: 245px;
+	min-height: 300px;
 	border: 1px solid var(--line);
 	border-radius: var(--radius);
 	background: rgba(255, 255, 255, 0.82);
@@ -630,9 +670,8 @@ h3 {
 	overflow: hidden;
 }
 
-.case-list article:last-child {
-	grid-column: 1 / -1;
-	min-height: 190px;
+.case-list article:nth-last-child(-n + 2) {
+	min-height: 260px;
 }
 
 .case-list article::before {
@@ -648,6 +687,15 @@ h3 {
 .case-head {
 	display: grid;
 	gap: 0.45rem;
+}
+
+.case-note {
+	border-left: 3px solid rgba(31, 122, 104, 0.28);
+	background: rgba(31, 122, 104, 0.06);
+	padding: 0.72rem 0.8rem;
+	font-size: 0.9rem;
+	font-weight: 600;
+	line-height: 1.48;
 }
 
 .timeline {
@@ -775,11 +823,15 @@ h3 {
 	}
 
 	.expertise-grid {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
 	.metric-grid {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.skills-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
 	.experience-list article,
@@ -859,7 +911,9 @@ h3 {
 
 	.proof-grid,
 	.metric-grid,
-	.case-list {
+	.case-list,
+	.skills-grid,
+	.expertise-grid {
 		grid-template-columns: 1fr;
 	}
 
