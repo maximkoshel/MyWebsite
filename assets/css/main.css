@@ -397,12 +397,30 @@ h3 {
 	line-height: 0.95;
 }
 
+.proof-grid strong {
+	font-family: "IBM Plex Sans", Arial, sans-serif;
+	font-size: clamp(1.05rem, 1.45vw, 1.25rem);
+	line-height: 1.1;
+}
+
+.metric-grid strong {
+	font-family: "IBM Plex Sans", Arial, sans-serif;
+	font-size: clamp(1rem, 1.35vw, 1.2rem);
+	font-weight: 700;
+	line-height: 1.15;
+}
+
 .proof-grid span,
 .metric-grid span {
 	color: var(--muted-strong);
 	font-size: 0.78rem;
 	font-weight: 700;
 	line-height: 1.24;
+}
+
+.metric-grid span {
+	font-weight: 500;
+	line-height: 1.45;
 }
 
 .stack-strip,
@@ -773,13 +791,11 @@ h3 {
 	}
 
 	.nav-links {
-		display: grid;
-		grid-auto-flow: column;
-		grid-auto-columns: max-content;
+		display: flex;
+		flex-wrap: wrap;
 		gap: 0.82rem;
-		overflow-x: auto;
+		overflow-x: visible;
 		padding-bottom: 0.25rem;
-		scrollbar-width: thin;
 	}
 
 	.nav-links a {
@@ -826,15 +842,15 @@ h3 {
 	}
 
 	.hero .proof-grid {
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-template-columns: 1fr;
 	}
 
 	.hero .proof-grid strong {
-		font-size: 1.55rem;
+		font-size: 1.05rem;
 	}
 
 	.hero .proof-grid span {
-		font-size: 0.68rem;
+		font-size: 0.78rem;
 	}
 
 	.skill-rows p {
