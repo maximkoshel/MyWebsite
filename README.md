@@ -4,6 +4,10 @@ Static GitHub Pages portfolio for Maxim Koshel, Senior DevOps Engineer.
 
 The site is intentionally lightweight: plain HTML and CSS, no build step, no backend, and no runtime dependencies. It presents public-safe experience, impact, case-study summaries, and contact links for DevOps, SRE, platform engineering, and infrastructure roles.
 
+Published with GitHub Pages:
+
+https://maximkoshel.github.io/portfolio/
+
 ## Stack
 
 - HTML
